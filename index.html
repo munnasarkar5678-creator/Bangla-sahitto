@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>বাংলা সাহিত্য ভাণ্ডার</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>📚 বাংলা সাহিত্য ভাণ্ডার</h1>
+      <p>বাংলা সাহিত্য পড়ুন — সহজে, বিনামূল্যে</p>
+      <input id="search" type="search" placeholder="সাহিত্য খুঁজুন..." aria-label="সাহিত্য খুঁজুন">
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h2>আপনার সাহিত্য পাঠের ঠিকানা</h2>
+      <p>কবিতা, গল্প, উপন্যাস ও প্রবন্ধ—এক জায়গায়।</p>
+    </section>
+
+    <div class="categories">
+      <button class="filter active" data-category="সব">সব</button>
+      <button class="filter" data-category="কবিতা">কবিতা</button>
+      <button class="filter" data-category="গল্প">গল্প</button>
+      <button class="filter" data-category="উপন্যাস">উপন্যাস</button>
+      <button class="filter" data-category="প্রবন্ধ">প্রবন্ধ</button>
+    </div>
+
+    <section id="library" class="grid"></section>
+
+    <p id="empty" class="empty" hidden>কোনো লেখা পাওয়া যায়নি।</p>
+  </main>
+
+  <footer>
+    <p>© 2026 বাংলা সাহিত্য ভাণ্ডার</p>
+    <p>শুধু public-domain বা অনুমতিপ্রাপ্ত লেখা প্রকাশ করুন।</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
